@@ -15,6 +15,8 @@ function dashboard_uptimerobot_stats_output() {
 
     $xml = simplexml_load_string($responseXML);
 
+    /* Any ideas, concepts, thoughts, questions or feature requests can be submitted to either support@icodeclarity.com or @CreativeBoulder */
+
     foreach($xml->monitor as $monitor) {
         echo '<div class="site-uptime-wrap" style="width: 100%; display: block; height: 235px;">';
         echo '<h2><strong style="font-size: 16px; float: left; width: 100%; margin: 0pt 0pt 5px;">Domain Uptime Statistics</strong></h2>';
