@@ -13,7 +13,7 @@ function dashboard_uptimerobot_stats_output() {
     $responseXML = curl_exec($c);
     curl_close($c);
 
-    $xml = simplexml_load_string($responseXML);
+    $xml = simplexml_load_string($responseXML); // Should SimpleXML be used here?
 
     /* Any ideas, concepts, thoughts, questions or feature requests can be submitted to either support@icodeclarity.com or @CreativeBoulder */
 
@@ -26,7 +26,7 @@ function dashboard_uptimerobot_stats_output() {
         echo $monitor['url'];
         echo '</span>';
         echo '</p>';
-        echo '<p style="font-size: 11px; float: left; width: 100%;">Your Website is currently- <br/>';
+        echo '<p style="font-size: 10px; float: left; width: 100%;">Your Website is currently- <br/>';
         if ( $monitor['status'] == 2 ) {
             echo '<span style="background: none repeat scroll 0% 0% rgb(255, 255, 221); border: 2px solid rgb(218, 218, 142);-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;text-align: center;padding: 0px 25px;float: left;margin-top: 10px;font-weight:bold;">';
             echo 'Online';
