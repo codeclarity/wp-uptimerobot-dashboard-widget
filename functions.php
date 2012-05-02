@@ -1,5 +1,9 @@
 function dashboard_uptimerobot_stats_output() {
     echo '<div class="site-uptime">';
+    /* Please note that as of May 2012, the UptimeRobot WP Widget will be getting a "face-lift". 
+    *  Plans to implement a more solid foundation and utilization of the UptimeRobot API will be 
+    *  committed as soon as possible */
+    
     /* Note- You will need a GetMonitor API Key from UpTimeRobot. You can get that from here, http://uptimerobot.com/mySettings.asp */
     /* Then goto, http://api.uptimerobot.com/getMonitors?apiKey=YOURKEY, and get your $monitorID */
     $apiKey     = "YOUR-GETMONITOR-APIKEY";
